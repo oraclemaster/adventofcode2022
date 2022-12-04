@@ -1,5 +1,4 @@
 import os
-import collections
 
 #os.chdir('X:\\Sorgenti\\Python\\adventofcode\\2022')
 print ('Directory: ' + os.getcwd())
@@ -20,4 +19,4 @@ partite = open("input2.txt").read().strip().split("\n") # prod
 # 7 CX = 1 for rock + 6 for win
 # 8 AY = 2 for paper + 6 for win
 # 9 BZ = 3 for scissor + 6 for win
-sum(map(["", "B X","C Y","A Z", "A X", "B Y", "C Z", "C X", "A Y", "B Z"].index,partite))
+print("Final ", sum(map(["", "B X","C X","A X", "A Y", "B Y", "C Y", "C Z", "A Z", "B Z"].index,partite)))
