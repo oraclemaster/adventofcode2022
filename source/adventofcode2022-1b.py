@@ -4,10 +4,8 @@ import os
 print ('Directory: ' + os.getcwd())
 in_file = open("input1.txt", "r")
 
-numrec = 0
 max = [0,0,0]
-totale = 0
-somma = 0
+totale = somma = 0
 
 for line in in_file:
     
@@ -26,4 +24,3 @@ in_file.close()
 
 for num in max:
     totale = totale + num
-print("record letti ", numrec, " max: ", max, " totale: ", totale)
