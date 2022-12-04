@@ -1,6 +1,6 @@
 import os
 
-os.chdir('X:\\Sorgenti\\Python\\adventofcode\\2022')
+#os.chdir('X:\\Sorgenti\\Python\\adventofcode\\2022')
 print ('Directory: ' + os.getcwd())
 in_file = open("input1.txt", "r")
 
