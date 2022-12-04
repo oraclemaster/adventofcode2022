@@ -2,12 +2,12 @@ import os
 
 os.chdir('X:\\Sorgenti\\Python\\adventofcode\\2022')
 print ('Directory: ' + os.getcwd())
-in_file = open("input1.txt", "r")
 
 numrec = 0
-max = [0,0,0]
-totale = 0
+max = 0
 somma = 0
+
+in_file = open("input1.txt", "r")
 
 for line in in_file:
     
@@ -15,16 +15,9 @@ for line in in_file:
     if line.strip():   #se la riga non è formata da soli spazi
         somma = somma + int(line)
     else:
-        if somma > min(max):
-            max[0] = somma
-            max.sort()
+        print("totale parziale: ", somma)
+        if somma > max:
+            max = somma
         somma = 0
-    
-if somma > min(max):
-    max[0] = somma
 in_file.close()
-
-for num in max:
-    totale = totale + num
-print("record letti ", numrec, " max: ", max, " totale: ", totale)
-# risultato atteso 209691
+print("record letti ", numrec, " max: ", max)
