@@ -6,8 +6,7 @@ print ('Directory: ' + os.getcwd())
 with open("input3.txt", "r") as file:
     data = file.read().splitlines()
     #print(data)
-    somma = 0
-    conta = 0
+    somma = conta = 0
     riga = ['','','']
     for half in data:
         if conta == 3:
