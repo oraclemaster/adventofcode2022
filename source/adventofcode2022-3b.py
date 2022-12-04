@@ -3,7 +3,7 @@ import os
 #os.chdir('X:\\Sorgenti\\Python\\adventofcode\\2022')
 print ('Directory: ' + os.getcwd())
 
-with open("input3Test.txt", "r") as file:
+with open("input3.txt", "r") as file:
     data = file.read().splitlines()
     #print(data)
     somma = 0
@@ -15,10 +15,8 @@ with open("input3Test.txt", "r") as file:
             ch = ''.join(set(riga[0])  & set(riga[1]) & set(riga[2]))
             if ch >= "a":
                 priority = ord(ch)-96
-                print("priorità ", priority)
             else: 
                 priority = ord(ch)-38
-                print("priorità ", priority)
             somma = somma + priority
             riga = [half,'','']
         else:
@@ -27,9 +25,7 @@ with open("input3Test.txt", "r") as file:
     ch = ''.join(set(riga[0])  & set(riga[1]) & set(riga[2]))
     if ch >= "a":
         priority = ord(ch)-96
-        print("priorità ", priority)
     else: 
         priority = ord(ch)-38
-        print("priorità ", priority)
     somma = somma + priority
 print("totale  ", somma)
