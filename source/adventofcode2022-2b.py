@@ -1,7 +1,6 @@
 import os
-import collections
 
-os.chdir('X:\\Sorgenti\\Python\\adventofcode\\2022')
+#os.chdir('X:\\Sorgenti\\Python\\adventofcode\\2022')
 print ('Directory: ' + os.getcwd())
 
 partite = open("input2.txt").read().strip().split("\n") # prod
@@ -18,4 +17,4 @@ partite = open("input2.txt").read().strip().split("\n") # prod
 # 7 CZ I must win so I choose X rock 1 + 6 I win = 7
 # 8 AZ I must win so I choose Y paper 2 + 6 I win = 8
 # 9 BZ I must win so I choose 3 scissor 3 + 6 I win = 9
-sum(map(["", "B X","C X","A X", "A Y", "B Y", "C Y", "C Z", "A Z", "B Z"].index,partite))
+print("Final ", sum(map(["", "B X","C X","A X", "A Y", "B Y", "C Y", "C Z", "A Z", "B Z"].index,partite)))
