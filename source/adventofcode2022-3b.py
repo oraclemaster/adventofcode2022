@@ -1,8 +1,3 @@
-import os
-
-#os.chdir('X:\\Sorgenti\\Python\\adventofcode\\2022')
-print ('Directory: ' + os.getcwd())
-
 with open("input3.txt", "r") as file:
     data = file.read().splitlines()
     #print(data)
