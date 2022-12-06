@@ -1,8 +1,5 @@
 import os
 
-#os.chdir('X:\\Sorgenti\\Python\\adventofcode\\2022')
-print ('Directory: ' + os.getcwd())
-
 max = somma = 0
 
 in_file = open("input1.txt", "r")
