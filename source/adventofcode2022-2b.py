@@ -1,8 +1,3 @@
-import os
-
-#os.chdir('X:\\Sorgenti\\Python\\adventofcode\\2022')
-print ('Directory: ' + os.getcwd())
-
 partite = open("input2.txt").read().strip().split("\n") # prod
 
 # A = Rock, B = Paper, C = Scissor first player, X = I must loose, Y = I must draw, Z = I must win 
