@@ -1,4 +1,4 @@
-partite = open("input2.txt").read().strip().split("\n") # prod
+partite = open("input2.txt").read().strip().split("\n")
 
 # A = Rock, B = Paper, C = Scissor first player, X = I must loose, Y = I must draw, Z = I must win 
 # score X = 1 rock, Y = 2 paper, Z = 3 scissor + 0 if lost, 3 draw e 6 if won
