@@ -1,5 +1,3 @@
-import os
-
 def removeDuplicate(str):
     if len(str) == 4:
         if len("".join(set(str))) == 4:
