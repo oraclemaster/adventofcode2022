@@ -1,11 +1,6 @@
 import os
 
-#os.chdir('X:\\Sorgenti\\Python\\adventofcode\\2022')
-print ('Directory: ' + os.getcwd())
-
 partite = open("input2.txt").read().strip().split("\n") # prod
-#partite = open("input2Test.txt").read().strip().split("\n") # Test
-#print ("partite ", partite)
 
 # A = Rock, B = Paper, C = Scissor first player, X = Rock, Y = Paper, Z = Scissor second player
 # score X = 1, Y = 2, Z = 3  + X = 0 loose, Y = 3 draw e Z = 6 if won
