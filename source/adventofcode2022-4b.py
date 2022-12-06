@@ -1,8 +1,3 @@
-import os
-
-#os.chdir('X:\\Sorgenti\\Python\\adventofcode\\2022')
-print ('Directory: ' + os.getcwd())
-
 def createList(rangeset):
     return [item for item in range(int(rangeset[0]), int(rangeset[1])+1)]
 
