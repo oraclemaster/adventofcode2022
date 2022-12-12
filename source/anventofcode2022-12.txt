@@ -1,0 +1,15 @@
+import numpy as np
+import networkx as nx
+
+in_file = open("input12Test.txt").read().strip().split("\n") 
+hill = np.array([[*x.strip()] for x in in_file])
+
+E = tuple(*np.argwhere(hill=='E')); hill[E] = 'z'
+S = tuple(*np.argwhere(hill=='S')); hill[S] = 'a'
+network = nx.grid_2d_graph(*hill.shape).to_directed()
+graph = nx.DiGraph([(x,y) for x,y in network.edges() 
+                if ord(hill[y]) <= ord(hill[x])+1])
+
+path = nx.shortest_path_length(graph, target=E)
+print("answer1 ", path[S])
+print("answer2 ", min(path[x] for x in path if hill[x]=='a'))
